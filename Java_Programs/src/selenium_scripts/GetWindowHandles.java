@@ -21,7 +21,7 @@ public class GetWindowHandles {
        System.out.println(str2);
   
       
-       Thread.sleep(2000);
+       Thread.sleep(3000);
        Object[]windows=str2.toArray();
        String window1=windows[0].toString();
        System.out.println(window1);
