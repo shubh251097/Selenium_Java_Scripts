@@ -13,7 +13,7 @@ public class GetWindowHandle {
        String str=driver.getWindowHandle();
        System.out.println(str);
        Thread.sleep(2000);
-       
+       driver.close();    
        
 	}
 
