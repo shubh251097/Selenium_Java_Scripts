@@ -21,7 +21,7 @@ public class DragandDrop_AlongWithFrame {
 				// located frame just like normal web element
 				
 				driver.switchTo().frame(0);
-				// one of the approach to enter into frame
+				// one of the approach to enter into a frame
 				
 				Actions act = new Actions(driver);
 				// create an object for actions class
