@@ -17,16 +17,19 @@ public class Handling_Alerts {
 		ele.click();
 		driver.findElement(By.xpath("//a[normalize-space()='Alerts']")).click();
 		
-		//Select sc =new Select(dropdown);
-		//sc.selectByVisibleText("Alerts");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[normalize-space()='Alert with OK']")).click();
+		//driver.findElement(By.xpath("//a[normalize-space()='Alert with OK']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
+		
+		String alertmsg=driver.switchTo().alert().getText();
+		System.out.println(alertmsg);
 		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
-		//driver.switchTo().alert().getText();
+		
+	
+		
+		
 		
 		
 		

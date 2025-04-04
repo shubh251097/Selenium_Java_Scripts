@@ -24,11 +24,11 @@ public class ScrollDownToBottom {
 		driver.navigate().to("https://google.com/");
 		String title=driver.getCurrentUrl();
 		System.out.println(title);
-		
+		Thread.sleep(3000);
 		driver.navigate().back();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.navigate().forward();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.close();
 
 	}

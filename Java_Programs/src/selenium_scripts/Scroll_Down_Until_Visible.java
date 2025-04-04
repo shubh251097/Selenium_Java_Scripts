@@ -21,11 +21,13 @@ public class Scroll_Down_Until_Visible {
         driver.get("https://www.browserstack.com/guide/selenium-scroll-tutorial");
 
         //Locating element by link text and store in variable "Element"        		
-        WebElement element = driver.findElement(By.linkText("Try Selenium Testing For Free"));
+        WebElement element = driver.findElement(By.linkText("Try BrowserStack for Free"));
+        //element.click();
 
         // Scrolling down the page till the element is found	
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", element);
+        //element.click();
     }
 
 	}
